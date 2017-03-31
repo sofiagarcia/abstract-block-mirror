@@ -13,7 +13,7 @@ function setup() {
 function draw() {
   background(41);
   video = createCapture(VIDEO);
-  video.size(width/vScale, height/vScale);
+//   video.size(width/vScale, height/vScale);
   video.hide();
   
   loadPixels();
