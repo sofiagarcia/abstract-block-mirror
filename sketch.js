@@ -15,7 +15,7 @@ video.size(width/vScale, height/vScale);
 function draw() {
   background(41);
  
-  
+  video.loadPixels();
   loadPixels();
   for(var y = 0; y < video.height; y++){
     for(var x = 0; x < video.width; x++){
