@@ -15,7 +15,7 @@ function setup() {
 function draw() {
   background(41);
   
-//   video.loadPixels();
+  video.hide();
   loadPixels();
   for(var y = 0; y < video.height; y++){
     for(var x = 0; x < video.width; x++){
