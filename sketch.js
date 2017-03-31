@@ -6,15 +6,15 @@ var slider;
 function setup() {
   createCanvas(640, 480);
   pixelDensity(1);
-
+ video = createCapture(VIDEO);
+video.size(width/vScale, height/vScale);
+  video.hide();
   slider = createSlider(0, 255, 77);
 }
 
 function draw() {
   background(41);
-  video = createCapture(VIDEO);
-//   video.size(width/vScale, height/vScale);
-  video.hide();
+ 
   
   loadPixels();
   for(var y = 0; y < video.height; y++){
